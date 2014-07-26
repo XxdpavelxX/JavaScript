@@ -1,2 +1,2 @@
-JavaScript-Games
+Java for fun!
 ================
