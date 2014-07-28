@@ -1,0 +1,20 @@
+var football = prompt("What's your favorite football team")
+
+switch(football)
+    {
+    
+    case ("Jets"):
+        console.log("Good Luck, you're gonna need it")
+        break;
+    case ("Patriots"):
+        console.log("You don't gotta rub it in jerk!")
+        break;
+        
+    case ("Jaguars"):
+        console.log("Shahid Khan is that you?")
+        break;
+        
+    default:
+        console.log("Wrong Sport!")
+        break;
+        }
