@@ -1,0 +1,41 @@
+var user = prompt ("You are at a bar, and there are 3 beautiful women. a) Is a brunette. Has a bunch of male and female friends surrounding her. She looks athletic and is wearing belly revealing  tank top and short shorts b) Is a blonde. She is attractive but has two less attractive female friends with her. She is petit, wearing jeans and has a belly piercing c) Is by herself, has long black hair and is wearing a crop top with a short skirt. Which one do you approach a, b or c?.").toLowerCase();
+switch (user) {
+    
+        case 'a':
+            var confident = prompt("You approach the girl and her friends, she glances over at you. She says her name is Julia. Do you a) Engage her whole group in conversation or b)Pull Julia aside and talk privately to her?").toLowerCase()
+            var strong = prompt("Are you strong? a)YES b)NO").toLowerCase()
+            if (confident ==='a' && strong)             
+            {console.log("Julia invites you back to her place. YOU WIN!")}
+            if (confident === 'b' && strong==='a')
+            {console.log("The guys in the group get angry and attack you. Luckily you are strong so you manage to beat them up. Unfortunately someone called the cops during your fight and now you have to spend the rest of the night in jail. Don't drop the soap. You Lose.")}
+            if (confident === 'b' && strong === 'b')
+            {console.log("The guys in the group get angry at you and beat you up. Julia and the rest of her group laugh at you. Then you get kicked out of the bar for starting a fight. You Lose.")}
+            break;
+    
+        case'b':
+            var interesting = prompt("You approach the girl and her friends. You overhear another girl call her Anna. Do you a)Attempt to impress all 3 girls by showing them a magic trick or b) Offer to buy all three of them beer!? or c) Only offer to buy Anna beer?").toLowerCase()
+            var handsome = prompt("Are you a handsome guy? a) Yes or b)No")
+            if (interesting === 'a')
+            {console.log
+            ("Anna and her friends are captivated by your skill and knowledge. Anna asks if you want to hang out with her and offers to buy you a drink. You Win!")}
+            if (interesting ==='b' || handsome === 'b')
+            {console.log("The girls drink your free beer then leave you to go hang out with some guy who actually looks interesting. The bartender asks you if you want to pay the 45$ tab in cash or credit. You Lose!")}
+            if (interesting === 'c')
+            {console.log("Anna accepts youre free drink, however the other 2 girls quickly interrupt saying they want to go. Anna leaves with them and doesn't give you her number.The bartender asks you if you want to pay the 15$ tab in cash or credit. You Lose! ")}
+            break;
+            
+            case 'c':
+            var approach=prompt("You approach the girl and ask her what her name is. She says it is Jane. Do you a) Ask to buy Jane a beer. b) Try make small talk with Jane.").toLowerCase()
+            if (approach === 'a')
+            {console.log(" Jane thinks you are trying to get her drunk to take advantage of her and beckons the bouncer. You get kicked out. Ouch, guess she just doesn't want company. It's raining hard, you get soaked. You Lose!")}
+            else if (approach === 'b')
+            {console.log("Jane quickly gets tired of listening to you spout giberish and beckons the bouncer. You get kicked out. Ouch, guess she just doesn't want company. It's raining hard, you get soaked. You Lose!")}
+            else if (!(approach ==='a' && approach ==='b'))
+            {console.log("Jane is impressed with how you defy the rules. She grabs your hand and leads you to a private bathroom and takes off her crop top. You Win!")}
+            
+            break;
+            
+            
+    default:
+        console.log("You decide women are overrated and just standback drinking a beer. Try picking choice 'a','b;, or 'c' for fun next time.")
+            }
